@@ -1,19 +1,20 @@
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Decker Urbano
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+        <div className="text-sm/6 text-balance sm:text-left font-[family-name:var(--font-geist-mono)] tracking-[-.01em]">
+          Decker Urbano
+          <br />
+          CTO @Commet
+          <br />
+          Open source contributor
+          <br />
+          Startup enthusiast
+        </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <Link
@@ -36,12 +37,12 @@ export default function Home() {
         </Link>
         <Link
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="mailto:me@decker.sh"
+          href="https://x.com/0xDecker"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IoMdMail size={16} />
-          Email
+          <FaXTwitter size={16} />
+          Twitter
         </Link>
       </footer>
     </div>
