@@ -9,7 +9,7 @@ export default function Home() {
         <div className="text-sm/6 text-balance sm:text-left font-[family-name:var(--font-geist-mono)] tracking-[-.01em]">
           Decker Urbano
           <br />
-          CTO @Commet
+          CTO <Link className="hover:underline hover:underline-offset-4" href="https://commet.co" target="_blank" rel="noopener noreferrer">@Commet</Link>
           <br />
           Open source contributor
           <br />
