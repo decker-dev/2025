@@ -48,7 +48,7 @@ export default function Home() {
 					{/* Bottom row - Two projects side by side */}
 					<div className="grid grid-cols-2 gap-3">
 						<Link
-							href="https://better-analytics.dev"
+							href="https://better-analytics.app"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="group border border-gray-800 rounded-lg p-4 hover:border-gray-600 transition-colors duration-200 flex items-center justify-center"
@@ -71,9 +71,7 @@ export default function Home() {
 								<h3 className="text-sm font-medium font-[family-name:var(--font-geist-mono)] tracking-[-.01em] group-hover:text-gray-300 transition-colors">
 									Mystic
 								</h3>
-								<p className="text-xs text-gray-500 mt-1">
-                  Wyzard game
-								</p>
+								<p className="text-xs text-gray-500 mt-1">Wyzard game</p>
 							</div>
 						</Link>
 					</div>
