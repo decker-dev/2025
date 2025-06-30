@@ -71,7 +71,7 @@ export default function Home() {
 								<h3 className="text-xs font-medium font-[family-name:var(--font-geist-mono)] tracking-tight group-hover:text-gray-300 transition-colors">
 									Mystic
 								</h3>
-								<p className="text-xs text-gray-500 mt-1">Development tool</p>
+								<p className="text-xs text-gray-500 mt-1">Wizards game</p>
 							</div>
 						</Link>
 					</div>
