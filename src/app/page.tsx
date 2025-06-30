@@ -4,9 +4,10 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export default function Home() {
 	return (
-		<div className="grid grid-rows-[20px_1fr_auto_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-			<main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start mt-30">
-				<div className="text-base/6 text-balance sm:text-left font-[family-name:var(--font-geist-mono)] tracking-[-.01em]">
+		<div className="min-h-screen relative">
+			{/* Descripción centrada en X e Y */}
+			<section className="absolute inset-0 flex items-center justify-center">
+				<div className="text-left text-sm sm:text-base leading-relaxed font-[family-name:var(--font-geist-mono)] tracking-tight">
 					Decker Urbano
 					<br />
 					CTO{" "}
@@ -23,20 +24,19 @@ export default function Home() {
 					<br />
 					Startup enthusiast
 				</div>
-			</main>
+			</section>
 
-			{/* Projects Section */}
-			<section className="row-start-3 flex justify-center">
-				<div className="grid grid-rows-2 gap-3 h-[200px] w-[400px]">
-					{/* Commet - Full width top row */}
+			{/* Cards más chicas y posicionadas arriba de los links */}
+			<section className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-full max-w-md px-6">
+				<div className="grid gap-2 mx-auto">
 					<Link
 						href="https://commet.co"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="group border border-gray-800 rounded-lg p-4 hover:border-gray-600 transition-colors duration-200 flex items-center justify-center"
+						className="group border border-gray-800 rounded-lg p-3 hover:border-gray-600 transition-colors duration-200 flex items-center justify-center min-h-[60px]"
 					>
 						<div className="text-center">
-							<h3 className="text-base font-medium font-[family-name:var(--font-geist-mono)] tracking-[-.01em] group-hover:text-gray-300 transition-colors">
+							<h3 className="text-xs sm:text-sm font-medium font-[family-name:var(--font-geist-mono)] tracking-tight group-hover:text-gray-300 transition-colors">
 								Commet
 							</h3>
 							<p className="text-xs text-gray-500 mt-1">
@@ -46,15 +46,15 @@ export default function Home() {
 					</Link>
 
 					{/* Bottom row - Two projects side by side */}
-					<div className="grid grid-cols-2 gap-3">
+					<div className="grid grid-cols-2 gap-2">
 						<Link
-							href="https://better-analytics.app"
+							href="https://better-analytics.app/"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="group border border-gray-800 rounded-lg p-4 hover:border-gray-600 transition-colors duration-200 flex items-center justify-center"
+							className="group border border-gray-800 rounded-lg p-3 hover:border-gray-600 transition-colors duration-200 flex items-center justify-center min-h-[60px]"
 						>
 							<div className="text-center">
-								<h3 className="text-sm font-medium font-[family-name:var(--font-geist-mono)] tracking-[-.01em] group-hover:text-gray-300 transition-colors">
+								<h3 className="text-xs font-medium font-[family-name:var(--font-geist-mono)] tracking-tight group-hover:text-gray-300 transition-colors">
 									Better Analytics
 								</h3>
 								<p className="text-xs text-gray-500 mt-1">Analytics tool</p>
@@ -62,24 +62,26 @@ export default function Home() {
 						</Link>
 
 						<Link
-							href="https://mystic.lat"
+							href="https://mystic.lat/"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="group border border-gray-800 rounded-lg p-4 hover:border-gray-600 transition-colors duration-200 flex items-center justify-center"
+							className="group border border-gray-800 rounded-lg p-3 hover:border-gray-600 transition-colors duration-200 flex items-center justify-center min-h-[60px]"
 						>
 							<div className="text-center">
-								<h3 className="text-sm font-medium font-[family-name:var(--font-geist-mono)] tracking-[-.01em] group-hover:text-gray-300 transition-colors">
+								<h3 className="text-xs font-medium font-[family-name:var(--font-geist-mono)] tracking-tight group-hover:text-gray-300 transition-colors">
 									Mystic
 								</h3>
-								<p className="text-xs text-gray-500 mt-1">Wyzard game</p>
+								<p className="text-xs text-gray-500 mt-1">Development tool</p>
 							</div>
 						</Link>
 					</div>
 				</div>
 			</section>
-			<footer className="row-start-4 flex gap-[24px] flex-wrap items-center justify-center">
+
+			{/* Links pegados al borde inferior */}
+			<section className="absolute bottom-0 left-0 right-0 p-6 flex gap-6 flex-wrap items-center justify-center">
 				<Link
-					className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+					className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-sm"
 					target="_blank"
 					rel="noopener noreferrer"
 					href="https://www.linkedin.com/in/decker-urbano/"
@@ -88,7 +90,7 @@ export default function Home() {
 					LinkedIn
 				</Link>
 				<Link
-					className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+					className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-sm"
 					href="https://github.com/decker-dev"
 					target="_blank"
 					rel="noopener noreferrer"
@@ -97,7 +99,7 @@ export default function Home() {
 					GitHub
 				</Link>
 				<Link
-					className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+					className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-sm"
 					href="https://x.com/0xDecker"
 					target="_blank"
 					rel="noopener noreferrer"
@@ -105,7 +107,7 @@ export default function Home() {
 					<FaXTwitter size={16} />
 					Twitter
 				</Link>
-			</footer>
+			</section>
 		</div>
 	);
 }
