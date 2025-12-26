@@ -40,7 +40,7 @@ export default function Home() {
 								Commet
 							</h3>
 							<p className="text-xs text-gray-500 mt-1">
-								Smart commission automation for sales teams
+								Billing and payments for SaaS and AI
 							</p>
 						</div>
 					</Link>
@@ -48,16 +48,16 @@ export default function Home() {
 					{/* Bottom row - Two projects side by side */}
 					<div className="grid grid-cols-2 gap-2">
 						<Link
-							href="https://better-analytics.app/"
+							href="https://billui.com/"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="group border border-gray-800 rounded-lg p-3 hover:border-gray-600 transition-colors duration-200 flex items-center justify-center min-h-[60px]"
 						>
 							<div className="text-center">
 								<h3 className="text-xs font-medium font-[family-name:var(--font-geist-mono)] tracking-tight group-hover:text-gray-300 transition-colors">
-									Better Analytics
+									bill/ui
 								</h3>
-								<p className="text-xs text-gray-500 mt-1">Analytics tool</p>
+								<p className="text-xs text-gray-500 mt-1">React billing components</p>
 							</div>
 						</Link>
 
