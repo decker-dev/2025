@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Decker Urbano",
-  description: "CTO @Commet. Open source contributor and startup enthusiast with a passion for building innovative technology solutions.",
+  description: "CTO Commet. Open source contributor and startup enthusiast with a passion for building innovative technology solutions.",
   keywords: ["Decker Urbano", "CTO", "Commet", "open source", "startup", "developer", "tech"],
   authors: [{ name: "Decker Urbano" }],
   openGraph: {
